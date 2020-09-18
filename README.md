@@ -7,6 +7,8 @@
 ---
 
 <div align="Center">Programación orientada a objetos y Algoritmos con Python </div>
+
+
 # Tabla de contenido
 - [Tabla de contenido](#tabla-de-contenido)
 - [Programación Orientada a Objetos](#programación-orientada-a-objetos)
