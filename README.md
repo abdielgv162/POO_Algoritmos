@@ -877,4 +877,3 @@ if __name__ == '__main__':
 
     resultado = morral(tamano_morral, pesos, valores, n)
     print(resultado)
-
