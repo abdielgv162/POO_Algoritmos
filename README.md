@@ -1,7 +1,7 @@
 <div align="Center">
     <h1> Documento creado por karlbehrensg </h1>
     <h2>Enlace a su GitHub: </h2>
-    <h4>[https://github.com/karlbehrensg/poo-y-algoritmos-python](https://github.com/karlbehrensg/poo-y-algoritmos-python) </h4>
+    <h4>https://github.com/karlbehrensg/poo-y-algoritmos-python</h4>
 </div>
 ------------
 ## # Programación orientada a objetos y Algoritmos con Python
