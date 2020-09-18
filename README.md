@@ -4,8 +4,7 @@
     <h4>https://github.com/karlbehrensg/poo-y-algoritmos-python</h4>
 </div>
 
-###Programación orientada a objetos y Algoritmos con Python
-
+Programación orientada a objetos y Algoritmos con Python
 Introducción al documento.
 
 El contenido de este documento esta basado en el curso del mismo nombre dictado por David Aroesti en Platzi.
