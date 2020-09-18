@@ -3,8 +3,8 @@
     <h2>Enlace a su GitHub: </h2>
     <h4>https://github.com/karlbehrensg/poo-y-algoritmos-python</h4>
 </div>
-------------
-## # Programación orientada a objetos y Algoritmos con Python
+
+###Programación orientada a objetos y Algoritmos con Python
 
 Introducción al documento.
 
@@ -625,9 +625,6 @@ Existen distintos tipos de complejidad algorítmica:
 - **O(2^n) Exponencial:** crecerá de forma **exponencial**, por lo que la carga es muy alta. Para nada recomendable en ningún caso, solo para análisis conceptual.
 - **O(n!) Factorial:** crece de forma **factorial**, por lo que al igual que el exponencial su carga es muy alta, por lo que jamas utilizar algoritmos de este tipo.
 
-<div align="center"> 
-  <img src="readme_img/big-o-complexity-chart.png" width="70%">
-</div>
 
 # Algoritmos de búsqueda y ordenación
 
@@ -668,30 +665,6 @@ La **búsqueda binaria** toma una estrategia llamada "Divide y conquista", la cu
 
 La **búsqueda binaria** es uno de los mejores algoritmos que se tienen hoy en día para búsqueda, ya que reduce significativamente el numero de pasos, y así disminuyendo nuestro Big O.
 
-<div align="center">
-  <h4>Caso Promedio</h4>
-</div>
-
-<div align="center"> 
-  <img src="readme_img/binary-and-linear-search-animations.gif" width="70%">
-</div>
-
-<div align="center">
-  <h4>Peor de los Casos</h4>
-</div>
-
-<div align="center"> 
-  <img src="readme_img/linear-vs-binary-search-worst-case.gif" width="70%">
-</div>
-
-<div align="center">
-  <h4>Mejor de los Casos</h4>
-</div>
-
-<div align="center"> 
-  <img src="readme_img/linear-vs-binary-search-best-case.gif" width="70%">
-</div>
-
 Para ver de forma practica haremos una búsqueda binaria a través de código. Lo primero que tenemos que realizar es ordenar nuestra lista antes de ejecutar la búsqueda.
 
 ```py
@@ -727,10 +700,6 @@ if __name__ == '__main__':
 ## Ordenamiento de burbuja
 
 El primer algoritmo de ordenamiento que veremos es el **ordenamiento de burbuja**. Es un algoritmo que recorre repetidamente una lista que necesita ordenarse. Compara elementos adyacentes y los intercambia si están en el orden incorrecto. Este procedimiento se repite hasta que no se requiere mas intercambios, lo que indica que la lista se encuentra ordenada.
-
-<div align="center"> 
-  <img src="readme_img/bubble-sort.gif" width="80%">
-</div>
 
 ```py
 import random
@@ -835,9 +804,6 @@ def ordenamiento_por_insercion(lista):
 
 El **ordenamiento por mezcla** creado por **John von Neumann** el cual aplica el concepto de "divide y conquista". Primero divide una lista en partes iguales hasta que quedan sublistas de 1 o 0 elementos. Luego las recombina en forma ordenada.
 
-<div align="center"> 
-  <img src="readme_img/merge-sort.gif" width="60%">
-</div>
 
 ```py
 import random
@@ -932,10 +898,6 @@ deactivate          # Comando para desactivar ambiente Virtual
 
 Es importante que podamos traducir los datos que nos arrojan nuestro programa en un elemento visual, así podemos realizar reconocimientos de patrones, predicción de series, simplifica la interpretación y la conclusión acerca de los datos.
 
-<div align="center"> 
-  <img src="readme_img/grafico.svg" width="80%">
-</div>
-
 ## Graficado simple
 
 La librería [**Bokeh**](http://docs.bokeh.org/en/latest/index.html) permite construir gráficas complejas de manera rápida y con comandos simples, también nos permite exportar a varios formatos como html, notebooks, imágenes, etc. [**Bokeh**](http://docs.bokeh.org/en/latest/index.html#) se puede utilizar en el servidor con **Flask** y **Django**.
@@ -966,10 +928,6 @@ if __name__ == '__main__':
 El concepto de **optimización** permite resolver muchos problemas de manera computacional. Cuando pensamos en un algoritmo de optimización debemos definir una función objetivo que debemos maximizar o minimizar, respetando una serie de limitantes que definamos. 
 
 ## El problema del morral
-
-<div align="center"> 
-  <img src="readme_img/backpack-problem.png" width="40%">
-</div>
 
 Imagina que eres un ladrón que entra a un museo pero tienes un gran problema, nada mas tienes una mochila pero hay muchísimas cosas mas de las que puedes cargar, por lo cual debes determinar cuales artículos puedes cargar y te entregaran el mayor valor posible.
 
