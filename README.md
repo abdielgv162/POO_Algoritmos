@@ -4,15 +4,14 @@
     <h4>https://github.com/karlbehrensg/poo-y-algoritmos-python</h4>
 </div>
 
-Programación orientada a objetos y Algoritmos con Python
-Introducción al documento.
+---
 
-El contenido de este documento esta basado en el curso del mismo nombre dictado por David Aroesti en Platzi.
-
+<div align="Center">Programación orientada a objetos y Algoritmos con Python </div>
 # Tabla de contenido
 - [Tabla de contenido](#tabla-de-contenido)
 - [Programación Orientada a Objetos](#programación-orientada-a-objetos)
   - [Objetivos](#objetivos)
+  - [- Aprender a resolver problemas de búsqueda, ordenación y optimización.](#ulliaprender-a-resolver-problemas-de-búsqueda-ordenación-y-optimizaciónliul)
   - [Programación orientada a objetos en Python](#programación-orientada-a-objetos-en-python)
     - [Clases en Python](#clases-en-python)
     - [Instancias](#instancias)
@@ -57,7 +56,7 @@ Con este documento tenemos como **objetivos:**
 - Entender cómo medir la eficiencia temporal y espacial de nuestros algoritmos.
 - Entender cómo y por qué graficar.
 - Aprender a resolver problemas de búsqueda, ordenación y optimización.
-
+---
 ## Programación orientada a objetos en Python
 
 Uno de los elementos más importantes de los lenguajes de programación es la utilización de clases para organizar programas en módulos y abstracciones de datos.
@@ -71,6 +70,8 @@ Puesto de otra manera, la programación orientada a objetos nos permite modelar 
 Las ideas detrás de la programación orientada a objetos tienen más de 50 años y han sido ampliamente aceptadas y practicadas en los últimos treinta. A mediados de la década de los setenta se comenzaron a escribir artículos académicos explicando los beneficios de esta aproximación a la programación. También durante esos años se comenzaron a escribir los primeros lenguajes de programación que incorporaban estas ideas (como Smalltalk y CLU). Pero no fue hasta la llegada de Java y C++ que la idea consiguió un número importante de seguidores.
 
 Hasta ahora, en el curso previo de esta serie hemos utilizado programación orientada a objetos de manera implícita. Cuando decimos "Los objetos son las principales cosas que un programa de Python manipula. Cada objeto tiene un tipo que define qué cosas puede realizar un programa con dicho objeto.", nos estamos refiriendo a las ideas principales de la programación orientada a objetos. Hemos utilizado los tipos lista y diccionario, entre muchos otros, así como los métodos asociados a dichos tipos. Así como los creadores de un lenguaje de programación sólo pueden diseñar una fracción muy pequeña de todas las funciones útiles (como abs, float, type, etc.), también pueden escribir una fracción muy pequeña de los tipos útiles (int, str, dict, list, etc.). Ya sabemos los mecanismos que nos permiten crear funciones, ahora veremos los mecanismos que nos permiten crear nuevos tipos (o clases).
+
+---
 
 ### Clases en Python
 
@@ -86,6 +87,8 @@ Sin embargo, este tipo de organización rápidamente se sale de control. ¿Qué 
 Las clases nos permiten crear nuevos tipos que contiene información arbitraria sobre un objeto. En el caso del hotel, podríamos crear dos clases `Hotel()` y `Cuarto()` que nos permitiera dar seguimiento a las propiedades como número de cuartos, ocupación, aseo, tipo de habitación, etc.
 
 Es importante resaltar que las clases sólo proveen estructura. Son un molde con el cual podemos construir objetos específicos. La clase señala las propiedades que los hoteles que modelemos tendrán, pero no es ningún hotel específico. Para eso necesitamos las instancias.
+
+---
 
 ### Instancias
 
@@ -103,6 +106,7 @@ Una vez que tenemos una clase llamada Hotel podemos generar una instancia llaman
 ```py
 hotel = Hotel()
 ```
+---
 
 ### Atributos de la instancia
 
@@ -120,6 +124,7 @@ class Hotel:
 hotel = Hotel(numero_maximo_de_huespedes=50, lugares_de_estacionamiento=20)
 print(hotel.lugares_de_estacionamiento) # 20
 ```
+---
 
 ### Métodos de instancia
 
@@ -147,6 +152,8 @@ hotel.ocupacion_total() # 2
 ```
 
 Ahora que ya sabemos qué son las clases y cómo las podemos utilizar en nuestros programas, platícanos qué clases te serían útiles para modelar en uno de tus programas.
+
+---
 
 ## Tipos de datos abstractos y clases, Instancias
 
@@ -295,7 +302,7 @@ class Motor:
     def inyecta_gasolina(self, cantidad):
         pass
 ```
-
+---
 ## Abstracción
 
 La **abstracción** es:
@@ -342,6 +349,8 @@ if __name__ == '__main__':
     lavadora = Lavadora()
     lavadora.lavar() # Ejecutamos el método publico de nuestra instancia.
 ```
+
+---
 
 ## Encapsulación, getters and setters
 
@@ -395,6 +404,8 @@ Ciudad de México
 
 ## Herencia
 
+---
+
 La **herencia** permite modelar una jerarquía de clases, con el cual compartiremos comportamientos en común. Al padre se le conoce como _superclase_ y al hijo como _subclase_.
 
 ```py
@@ -427,6 +438,7 @@ if __name__ == '__main__':
     cuadrado = Cuadrado(lado=5)
     print(cuadrado.area())
 ```
+---
 
 ## Polimorfismo
 
@@ -467,6 +479,7 @@ def main():
 if __name__ == '__main__':
     main()
 ```
+---
 
 # Complejidad algorítmica
 
@@ -624,6 +637,7 @@ Existen distintos tipos de complejidad algorítmica:
 - **O(2^n) Exponencial:** crecerá de forma **exponencial**, por lo que la carga es muy alta. Para nada recomendable en ningún caso, solo para análisis conceptual.
 - **O(n!) Factorial:** crece de forma **factorial**, por lo que al igual que el exponencial su carga es muy alta, por lo que jamas utilizar algoritmos de este tipo.
 
+---
 
 # Algoritmos de búsqueda y ordenación
 
@@ -862,6 +876,8 @@ if __name__ == '__main__':
     print(lista_ordenada)
 ```
 
+---
+
 # Ambientes virtuales
 
 Los **ambientes virtuales** permiten aislar el ambiente para poder instalar diversas versiones de paquetes. A partir de _python 3_ se incluye en la librería estándar en el módulo **venv**. Ningún ingeniero profesional de Python trabaja sin ellos.
@@ -891,6 +907,8 @@ Para desactivar el ambiente virtual lo haremos con el siguiente comando.
 deactivate          # Comando para desactivar ambiente Virtual
 ```
 
+---
+
 # Graficado
 
 ## ¿Por qué graficar?
@@ -919,6 +937,8 @@ if __name__ == '__main__':
     fig.line(x_vals, y_vals, line_width=2)
     show(fig)
 ```
+
+---
 
 # Algoritmos de optimización
 
