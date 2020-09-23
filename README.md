@@ -711,7 +711,9 @@ if __name__ == '__main__':
     print(f'El elemento {objetivo} {"esta" if encontrado else "no esta"} en la lista')
 ```
 
-![Busqueda binaria vs Busqueda lineal](https://blog.penjee.com/wp-content/uploads/2015/04/binary-and-linear-search-animations.gif)
+<div align="center">
+    <img src="https://blog.penjee.com/wp-content/uploads/2015/04/binary-and-linear-search-animations.gif">
+</div>
 
 ## Ordenamiento de burbuja
 
