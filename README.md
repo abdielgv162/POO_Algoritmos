@@ -9,8 +9,7 @@
 <div align="Center">Programación orientada a objetos y Algoritmos con Python </div>
 
 
-# Tabla de contenido
-- [Tabla de contenido](#tabla-de-contenido)
+
 - [Programación Orientada a Objetos](#programación-orientada-a-objetos)
   - [Objetivos](#objetivos)
   - [- Aprender a resolver problemas de búsqueda, ordenación y optimización.](#ulliaprender-a-resolver-problemas-de-búsqueda-ordenación-y-optimizaciónliul)
@@ -711,6 +710,8 @@ if __name__ == '__main__':
     print(lista)
     print(f'El elemento {objetivo} {"esta" if encontrado else "no esta"} en la lista')
 ```
+
+![Busqueda binaria vs Busqueda lineal](https://blog.penjee.com/wp-content/uploads/2015/04/binary-and-linear-search-animations.gif)
 
 ## Ordenamiento de burbuja
 
