@@ -4,7 +4,8 @@ def ordenamiento_de_burbuja(lista):
     n = len(lista)
 
     for i in range(n):
-        for j in range(0, n-i-1):
+        for j in range(0, n-i-1): # O(n) * O(n) = O(n**2)
+            ##Al tener un crecimiento cuadratico no es tan buena opcion.
             
             
             if lista[j] > lista[j+1]:
