@@ -742,10 +742,14 @@ if __name__ == '__main__':
 
     lista_ordenada = ordenamiento_de_burbuja(lista)
     print(lista_ordenada)
-```
+```                              
+<div align="center">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif">
+</div>  
 
-## Ordenamiento por inserción
 
+
+## Ordenamiento por inserción  
 El ordenamiento por inserción es uno de los algoritmos más comunes que estudian los Científicos del Cómputo. Es intuitivo y fácil de implementar, pero es muy ineficiente para listas de gran tamaño.
 
 Una de las características del ordenamiento por inserción es que ordena en “su lugar.” Es decir, no requiere memoria adicional para realizar el ordenamiento ya que simplemente modifican los valores en memoria.
@@ -818,6 +822,10 @@ def ordenamiento_por_insercion(lista):
         lista[posicion_actual] = valor_actual
 ```
 
+<div align="center">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Insertion-sort-example-300px.gif/250px-Insertion-sort-example-300px.gif">
+</div>  
+
 ## Ordenamiento por mezcla
 
 El **ordenamiento por mezcla** creado por **John von Neumann** el cual aplica el concepto de "divide y conquista". Primero divide una lista en partes iguales hasta que quedan sublistas de 1 o 0 elementos. Luego las recombina en forma ordenada.
@@ -880,6 +888,9 @@ if __name__ == '__main__':
     lista_ordenada = ordenamiento_por_mezcla(lista)
     print(lista_ordenada)
 ```
+<div align="center">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif">
+</div>  
 
 ---
 
