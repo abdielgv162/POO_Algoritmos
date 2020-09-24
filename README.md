@@ -1,7 +1,8 @@
 <div align="Center">
-    <h1> Documento creado por karlbehrensg </h1>
+    <h1> Base del documento creado por karlbehrensg </h1>
     <h2>Enlace a su GitHub: </h2>
     <h4>https://github.com/karlbehrensg/poo-y-algoritmos-python</h4>
+    <h2>Gracias por la idea uwu  </h2>
 </div>
 
 ---
@@ -12,7 +13,7 @@
 
 - [Programación Orientada a Objetos](#programación-orientada-a-objetos)
   - [Objetivos](#objetivos)
-  - [Aprender a resolver problemas de búsqueda, ordenación y optimización.](#ulliaprender-a-resolver-problemas-de-búsqueda-ordenación-y-optimizaciónliul)
+  - [- Aprender a resolver problemas de búsqueda, ordenación y optimización.](#ulliaprender-a-resolver-problemas-de-búsqueda-ordenación-y-optimizaciónliul)
   - [Programación orientada a objetos en Python](#programación-orientada-a-objetos-en-python)
     - [Clases en Python](#clases-en-python)
     - [Instancias](#instancias)
