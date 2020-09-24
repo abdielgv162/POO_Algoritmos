@@ -761,13 +761,11 @@ Una de las características del ordenamiento por inserción es que ordena en “
 
 La definición es simple:
 
-    Una lista es dividida entre una sublista ordenada y otra sublista desordenada. Al principio, la sublista ordenada contiene un solo elemento, por lo que por definición se encuentra ordenada.
-
-    A continuación se evalua el primer elemento dentro la sublista desordenada para que podamos insertarlo en el lugar correcto dentro de la lista ordenada.
-
-    La inserción se realiza al mover todos los elementos mayores al elemento que se está evauluando un lugar a la derecha.
-
-    Continua el proceso hasta que la sublista desordenada quede vacia y, por lo tanto, la lista se encontrará ordenada.
+*__Una lista es dividida entre una sublista ordenada y otra sublista desordenada.
+Al principio, la sublista ordenada contiene un solo elemento, por lo que por definición se encuentra ordenada.
+A continuación se evalua el primer elemento dentro la sublista desordenada para que podamos insertarlo en el lugar correcto dentro de la lista ordenada.
+La inserción se realiza al mover todos los elementos mayores al elemento que se está evauluando un lugar a la derecha.
+Continua el proceso hasta que la sublista desordenada quede vacia y, por lo tanto, la lista se encontrará ordenada.__*
 
 Veamos un ejemplo:
 
