@@ -629,6 +629,10 @@ def fibonacci(n):
 
 ## Clases de complejidad algorítmica
 
+<div align="center">
+    <img src="https://miro.medium.com/max/900/1*9AAzjRHOxG4RunA3chb5_w.gif">
+</div>
+
 Existen distintos tipos de complejidad algorítmica:
 
 - **O(1) Constante:** no importa la cantidad de input que reciba, siempre demorara el **mismo tiempo**.
@@ -927,6 +931,10 @@ deactivate          # Comando para desactivar ambiente Virtual
 ---
 
 # Graficado
+
+<div align="center">
+    <img src="https://media1.giphy.com/media/gjrOAylhpZm3dLnO5J/source.gif">
+</div> 
 
 ## ¿Por qué graficar?
 
