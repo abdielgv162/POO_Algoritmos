@@ -1,19 +1,20 @@
 <div align="Center">
-    <h1> Base del documento creado por karlbehrensg </h1>
+    <h2> Base del documento creado por karlbehrensg </h2>
     <h2>Enlace a su GitHub: </h2>
     <h4>https://github.com/karlbehrensg/poo-y-algoritmos-python</h4>
-    <h2>Gracias por la idea uwu  </h2>
+    <h4>Gracias por la idea uwu  </h4>
 </div>
 
 ---
 
-<div align="Center">Programación orientada a objetos y Algoritmos con Python </div>
+<div align="Center"><h2>Programación orientada a objetos y Algoritmos con Python </h2></div>
+<div align="center">
+    <img src="https://media1.giphy.com/media/KAq5w47R9rmTuvWOWa/giphy.gif">
+</div>
 
-
-
-- [Programación Orientada a Objetos](#programación-orientada-a-objetos)
+---
   - [Objetivos](#objetivos)
-  - [- Aprender a resolver problemas de búsqueda, ordenación y optimización.](#ulliaprender-a-resolver-problemas-de-búsqueda-ordenación-y-optimizaciónliul)
+  - [Aprender a resolver problemas de búsqueda, ordenación y optimización.](#ulliaprender-a-resolver-problemas-de-búsqueda-ordenación-y-optimizaciónliul)
   - [Programación orientada a objetos en Python](#programación-orientada-a-objetos-en-python)
     - [Clases en Python](#clases-en-python)
     - [Instancias](#instancias)
@@ -48,7 +49,6 @@
   - [Introducción a la optimización](#introducción-a-la-optimización)
   - [El problema del morral](#el-problema-del-morral)
 
-# Programación Orientada a Objetos
 
 ## Objetivos
 
