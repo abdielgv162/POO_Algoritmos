@@ -498,7 +498,7 @@ La complejidad algorítmica temporal la podemos definir como **T(n)** el cual de
 
 - Cronometrar el tiempo en el que corre un algoritmo. Sin embargo **no es una buena forma de medir** los algoritmos, ya que no se puede predecir cuanto demorara a medida que crece nuestros pasos.
 
-- Contar los pasos con una medida abstracta de operación. Nos puede acercar a una medición ideal, sin embargo varia mucho de algoritmo en algoritmo y a medida que crece nuestro dataset existen muchos términos que llegan a ser irrelevantes.
+- Contar los pasos con una medida abstracta de operación nos puede acercar a una medición ideal, sin embargo, varia mucho de algoritmo en algoritmo y a medida que crece nuestro dataset existen muchos términos que llegan a ser irrelevantes.
 
 - Contar los pasos conforme nos aproximamos al infinito pero con una medida asintótica.
 
@@ -935,7 +935,7 @@ Ahora, las llamadas recursivas nos ayudaran a llamar a la función ingresando co
             k += 1
 
 ```
-En esta parte lo que tenemos es que se cumplirá la condición siempre y cuando i y j no rebasen la longitud de las sublistas izquierda y derecha (recuerden que conforme vamos ordenando estas irán aumentando de tamaño)
+En esta parte lo que tenemos es que se cumplirá la condición siempre y cuando <strong>i</strong> y <strong>j </strong>no rebasen la longitud de las sublistas izquierda y derecha (recuerden que conforme vamos ordenando estas irán aumentando de tamaño)
 
 Lo que hará sera preguntar:
 
@@ -943,13 +943,13 @@ Lo que hará sera preguntar:
 
 De ser así: 
 
-"Agrega en tu indice actual k de la lista ordenada el valor del indice actual de la sublista izquierda y avanza al siguiente indice de la sublista izquierda"
+"Agrega en tu indice actual <strong>k</strong> de la lista ordenada el valor del indice actual de la sublista izquierda y avanza al siguiente indice de la sublista izquierda"
 
 De NO ser así: 
 
-“Agrega en tu indice actual k de la lista ordenada el valor del indice actual de la sublista derecha y avanza al siguiente indice de la sublista derecha”
+“Agrega en tu indice actual <strong>k</strong> de la lista ordenada el valor del indice actual de la sublista derecha y avanza al siguiente indice de la sublista derecha”
 
-Esto hará que las sublistas izquierda y derecha comiencen a ordenarse, ya que estamos efectuando la comparación entre ellas y estamos asignando los valores a la lista ordenada (k).
+Esto hará que las sublistas izquierda y derecha comiencen a ordenarse, ya que estamos efectuando la comparación entre ellas y estamos asignando los valores a la lista ordenada.
 
 ``` py
 
@@ -965,14 +965,14 @@ Esto hará que las sublistas izquierda y derecha comiencen a ordenarse, ya que e
 ```
 Esta parte lo que hará es lo siguiente:
 
-i comenzara a tomar la posición de los indices de la sublista izquierda, y como ya sabemos que están ordenadas por el paso anterior, lo único que hacemos es decir:
+<strong>i</strong> comenzara a tomar la posición de los indices de la sublista izquierda, y como ya sabemos que están ordenadas por el paso anterior, lo único que hacemos es decir:
 
-“Agrega a tu indice actual k de la lista ordenada el indice actual de la sublista izquierda e incrementa i y k para ir recorriendo los valores hasta que se agregue toda la sublista izquierda en la lista ordenada.”
+“Agrega a tu indice actual <strong>k</strong> de la lista ordenada el indice actual de la sublista izquierda e incrementa <strong>i</strong> y <strong>k</strong> para ir recorriendo los valores hasta que se agregue toda la sublista izquierda en la lista ordenada.”
 
 Así vamos a ir agregando indice por indice lo que tenemos en la sublista izquierda hacia la lista ordenada teniendo la primera mitad de los valores ya en su lugar correspondiente.
 
-Hacemos lo mismo para j que recorrerá la sublista derecha
-"Agrega en los indices de la lista ordenada los valores de la sublista derecha e incrementa los valores j y k de cada uno para ir recorriendolas indice por indice"
+Hacemos lo mismo para <strong>j</strong> que recorrerá la sublista derecha
+"Agrega en los indices de la lista ordenada los valores de la sublista derecha e incrementa los valores <strong>j</strong> y <strong>k</strong> de cada uno para ir recorriendolas indice por indice"
 
 Osea que ahora agregamos la otra mitad de la lista teniendo por fin todos los valores ya ordenados.
 
