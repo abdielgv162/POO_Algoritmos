@@ -899,8 +899,8 @@ if __name__ == '__main__':
 ---
 
 ### Explicacion: 
-  
-   
+
+
 
 ``` py
 
@@ -938,11 +938,16 @@ Ahora, las llamadas recursivas nos ayudaran a llamar a la función ingresando co
 En esta parte lo que tenemos es que se cumplirá la condición siempre y cuando i y j no rebasen la longitud de las sublistas izquierda y derecha (recuerden que conforme vamos ordenando estas irán aumentando de tamaño)
 
 Lo que hará sera preguntar:
+
 "¿el indice que esta evaluando en la sublista de la izquierda es menor que el indice evaluado en la sublista derecha?"
 
-De ser así: "Agrega en tu indice actual k de la lista ordenada el valor del indice actual de la sublista izquierda y avanza al siguiente indice de la sublista izquierda"
+De ser así: 
 
-De NO ser así: “Agrega en tu indice actual k de la lista ordenada el valor del indice actual de la sublista derecha y avanza al siguiente indice de la sublista derecha”
+"Agrega en tu indice actual k de la lista ordenada el valor del indice actual de la sublista izquierda y avanza al siguiente indice de la sublista izquierda"
+
+De NO ser así: 
+
+“Agrega en tu indice actual k de la lista ordenada el valor del indice actual de la sublista derecha y avanza al siguiente indice de la sublista derecha”
 
 Esto hará que las siblistas izquierda y derecha comiencen a ordenarse, ya que estamos efectuando la comparación entre ellas y estamos asignando los valores a la lista ordenada (k).
 
