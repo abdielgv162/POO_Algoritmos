@@ -949,7 +949,7 @@ De NO ser así:
 
 “Agrega en tu indice actual k de la lista ordenada el valor del indice actual de la sublista derecha y avanza al siguiente indice de la sublista derecha”
 
-Esto hará que las siblistas izquierda y derecha comiencen a ordenarse, ya que estamos efectuando la comparación entre ellas y estamos asignando los valores a la lista ordenada (k).
+Esto hará que las sublistas izquierda y derecha comiencen a ordenarse, ya que estamos efectuando la comparación entre ellas y estamos asignando los valores a la lista ordenada (k).
 
 ``` py
 
