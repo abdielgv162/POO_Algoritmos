@@ -41,7 +41,7 @@
   - [Ordenamiento de burbuja](#ordenamiento-de-burbuja)
   - [Ordenamiento por inserción](#ordenamiento-por-inserción)
   - [Ordenamiento por mezcla](#ordenamiento-por-mezcla)
-- [Explicacion:](#explicacion)
+    - [Explicacion:](#explicacion)
 - [Ambientes virtuales](#ambientes-virtuales)
 - [Graficado](#graficado)
   - [¿Por qué graficar?](#por-qué-graficar)
@@ -898,7 +898,9 @@ if __name__ == '__main__':
 
 ---
 
-# Explicacion:  
+### Explicacion: 
+  
+   
 
 ``` py
 
