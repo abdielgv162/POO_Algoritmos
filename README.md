@@ -41,6 +41,7 @@
   - [Ordenamiento de burbuja](#ordenamiento-de-burbuja)
   - [Ordenamiento por inserción](#ordenamiento-por-inserción)
   - [Ordenamiento por mezcla](#ordenamiento-por-mezcla)
+- [Explicacion:](#explicacion)
 - [Ambientes virtuales](#ambientes-virtuales)
 - [Graficado](#graficado)
   - [¿Por qué graficar?](#por-qué-graficar)
@@ -896,6 +897,76 @@ if __name__ == '__main__':
 </div>  
 
 ---
+
+# Explicacion:  
+
+``` py
+
+    if len(lista) > 1:
+        medio = len(lista) // 2
+        izquierda = lista[: medio]
+        derecha = lista[medio :]
+        #Llamada recursiva en cada mitad
+        ordenamiento_por_mezcla(izquierda)
+        ordenamiento_por_mezcla(derecha)
+
+```
+
+Vamos a evaluar para la longitud mayor a 1 ya que esto significa que aun puede dividirse en más sublistas, dividiendo en izquierda y derecha los elementos.
+Ahora, las llamadas recursivas nos ayudaran a llamar a la función ingresando como nuevos valores (izquierda) y (derecha), esto ayudara a ejecutar la función para seguir dividiendo en mitades hasta que todas las sublistas contengan un solo elemento y por lo tanto estén ordenadas.
+
+``` py
+
+#Iteradores para recorrer las dos sublistas
+        i = 0
+        j = 0
+        #Iterador para la lista principal
+        k = 0
+        while i < len(izquierda) and j < len(derecha):
+            if izquierda[i] < derecha[j]:
+                lista[k] = izquierda[i]
+                i += 1
+            else:
+                lista[k] = derecha[j]
+                j += 1
+            k += 1
+
+```
+En esta parte lo que tenemos es que se cumplirá la condición siempre y cuando i y j no rebasen la longitud de las sublistas izquierda y derecha (recuerden que conforme vamos ordenando estas irán aumentando de tamaño)
+
+Lo que hará sera preguntar:
+"¿el indice que esta evaluando en la sublista de la izquierda es menor que el indice evaluado en la sublista derecha?"
+De ser así: "Agrega en tu indice actual k de la lista ordenada el valor del indice actual de la sublista izquierda y avanza al siguiente indice de la sublista izquierda"
+De NO ser así: “Agrega en tu indice actual k de la lista ordenada el valor del indice actual de la sublista derecha y avanza al siguiente indice de la sublista derecha”
+
+Esto hará que las siblistas izquierda y derecha comiencen a ordenarse, ya que estamos efectuando la comparación entre ellas y estamos asignando los valores a la lista ordenada (k).
+
+``` py
+
+        while i < len(izquierda):
+            lista[k] = izquierda[i]
+            i += 1
+            k += 1
+        while j < len(derecha):
+            lista[k] = derecha[j]
+            j += 1
+            k += 1
+            
+```
+Esta parte lo que hará es lo siguiente:
+i comenzara a tomar la posición de los indices de la sublista izquierda, y como ya sabemos que están ordenadas por el paso anterior, lo único que hacemos es decir:
+“Agrega a tu indice actual k de la lista ordenada el indice actual de la sublista izquierda e incrementa i y k para ir recorriendo los valores hasta que se agregue toda la sublista izquierda en la lista ordenada.”
+
+Así vamos a ir agregando indice por indice lo que tenemos en la sublista izquierda hacia la lista ordenada teniendo la primera mitad de los valores ya en su lugar correspondiente.
+
+Hacemos lo mismo para j que recorrerá la sublista derecha
+"Agrega en los indices de la lista ordenada los valores de la sublista derecha e incrementa los valores j y k de cada uno para ir recorriendolas indice por indice"
+Osea que ahora agregamos la otra mitad de la lista teniendo por fin todos los valores ya ordenados.
+En otras palabras este paso es una especie de “concatenación de las sublistas izquierda y derecha en la lista principal”
+  
+  
+---
+
 
 # Ambientes virtuales
 
