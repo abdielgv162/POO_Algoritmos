@@ -1082,4 +1082,6 @@ if __name__ == '__main__':
     resultado = morral(tamano_morral, pesos, valores, n)
     print(resultado)
 ```
-
+<div align="center">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Knapsack.svg/220px-Knapsack.svg.png">
+</div>
