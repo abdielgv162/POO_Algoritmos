@@ -1102,7 +1102,7 @@ Para este algoritmo hemos elegido recorrer los elementos de la manera: n, n-1, n
     if n == 0 or tamano_morral == 0:
         return 0
 ```
-En esta parte creamos una funcion llamada <strong><i>morral()<i></strong> que, entre sus parámetros, tendrá la capacidad o tamaño del morral, el peso de cada elemento, los valores que aportan esos objetos y n que representa el objeto que iremos evaluando.
+En esta parte creamos una funcion llamada <strong><i>morral()</i></strong> que, entre sus parámetros, tendrá la capacidad o tamaño del morral, el peso de cada elemento, los valores que aportan esos objetos y n que representa el objeto que iremos evaluando.
 
 El primer if que vemos nos esta diciendo que de no tener más objetos por examinar o si el tamaño del morral llego a su límite, ya no podremos retornar ningún valor nuevo.
 
@@ -1115,13 +1115,10 @@ El segundo if nos esta diciendo que si el siguiente elemento <i>n</i> supera el 
 Atención con esta parte, en la parte del if esta escrito como [n-1] ya que en la notacion de una lista nos estamos refiriendo al elemento que se esta examinando actualmente en la iteracion, y en el return nos referimos al valor n-1 , por lo que hablamos del elemento examinado en la iteración anterior. 
 
 ``` py
-
      return max(valores[n - 1] + morral(tamano_morral - pesos[n - 1], pesos, valores, n - 1),
                 morral(tamano_morral, pesos, valores, n - 1))
-
 ```
 Esta parte es la que nos ayudará a saber si se eligió o no el elemento examinado.
-
 Para esta parte recordemos que el método max () devuelve el valor maximo de una secuencia de parametros.
   
   
