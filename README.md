@@ -1102,24 +1102,24 @@ Para este algoritmo hemos elegido recorrer los elementos de la manera: n, n-1, n
     if n == 0 or tamano_morral == 0:
         return 0
 ```
-En esta parte creamos una funcion llamada <strong><i>morral()</i></strong> que, entre sus parámetros, tendrá la capacidad o tamaño del morral, el peso de cada elemento, los valores que aportan esos objetos y n que representa el objeto que iremos evaluando.
+En esta parte creamos una funcion llamada <i>morral()</i> que, entre sus parámetros, tendrá la capacidad o tamaño del morral, el peso de cada elemento, los valores que aportan esos objetos y n que representa el objeto que iremos evaluando.
 
-El primer if que vemos nos esta diciendo que de no tener más objetos por examinar o si el tamaño del morral llego a su límite, ya no podremos retornar ningún valor nuevo.
+El primer <i>if</i> que vemos nos esta diciendo que de no tener más objetos por examinar o si el tamaño del morral llego a su límite, ya no podremos retornar ningún valor nuevo.
 
 ```py
         if pesos[n - 1] > tamano_morral:
         return morral(tamano_morral, pesos, valores, n - 1)
 ```
-El segundo if nos esta diciendo que si el siguiente elemento <i>n</i> supera el tamaño del morral, retornará el valor anterior de la funcion ejecutada para <i>n-1</i>.
+El segundo <i>if</i> nos esta diciendo que si el siguiente elemento <i>n</i> supera el tamaño del morral, retornará el valor anterior de la funcion ejecutada para <strong>n-1</strong>.
 
-Atención con esta parte, en la parte del if esta escrito como [n-1] ya que en la notacion de una lista nos estamos refiriendo al elemento que se esta examinando actualmente en la iteracion, y en el return nos referimos al valor n-1 , por lo que hablamos del elemento examinado en la iteración anterior. 
+Atención con esta parte, en la parte del if esta escrito como <strong>[n-1]</strong> ya que en la notacion de una lista nos estamos refiriendo al elemento que se esta examinando actualmente en la iteracion, y en el return nos referimos al valor <strong>n-1</strong> , por lo que hablamos del elemento examinado en la iteración anterior. 
 
 ``` py
      return max(valores[n - 1] + morral(tamano_morral - pesos[n - 1], pesos, valores, n - 1),
                 morral(tamano_morral, pesos, valores, n - 1))
 ```
 Esta parte es la que nos ayudará a saber si se eligió o no el elemento examinado.
-Para esta parte recordemos que el método max () devuelve el valor maximo de una secuencia de parametros.
+Para esta parte recordemos que el método <i>max()</i> devuelve el valor maximo de una secuencia de parametros.
   
   
 En este caso tenemos que nuetros parametros seran:
@@ -1128,13 +1128,12 @@ En este caso tenemos que nuetros parametros seran:
 ```
 
 Lo que significa:
-suma el valor del elemento actual de la lista más la funcion morral() evaluada para n-1, donde el tamaño del morral es el espacio restante hasta la iteracion anterior.
-
+suma el valor del elemento actual de la lista más la funcion <i>morral()</i> evaluada para <strong>n-1</strong>, donde el tamaño del morral es el espacio restante hasta la iteracion anterior.
 o  
 ```py
  morral(tamano_morral, pesos, valores, n - 1)
 ```
-Evalua unicamente la funcion morral() que tenias en la iteracion anterior 
+Evalua unicamente la funcion <i>morral()</i> que tenias en la iteracion anterior 
 
-Aqui entra en juego la funcion max(), la cual determinará cual de esos parametros arroja el valor más alto.
+Aqui entra en juego la funcion <i>max()</i>, la cual determinará cual de esos parametros arroja el valor más alto.
 Si el elemento actual de la iteracion no aporta un mayor valor que el anterior, tomará el anterior y así se mantendrá hasta recorrer todos los elementos de la lista.
