@@ -41,7 +41,7 @@
   - [Ordenamiento de burbuja](#ordenamiento-de-burbuja)
   - [Ordenamiento por inserción](#ordenamiento-por-inserción)
   - [Ordenamiento por mezcla](#ordenamiento-por-mezcla)
-    - [Explicacion:](#explicacion)
+    - [Explicacion del ordenamiento por mezcla:](#explicacion-del-ordenamiento-por-mezcla)
 - [Ambientes virtuales](#ambientes-virtuales)
 - [Graficado](#graficado)
   - [¿Por qué graficar?](#por-qué-graficar)
@@ -49,6 +49,7 @@
 - [Algoritmos de optimización](#algoritmos-de-optimización)
   - [Introducción a la optimización](#introducción-a-la-optimización)
   - [El problema del morral](#el-problema-del-morral)
+    - [Explicacion problema del morral:](#explicacion-problema-del-morral)
 
 
 ## Objetivos
@@ -898,7 +899,7 @@ if __name__ == '__main__':
 
 ---
 
-### Explicacion: 
+### Explicacion del ordenamiento por mezcla: 
 
 
 
@@ -1016,7 +1017,7 @@ deactivate          # Comando para desactivar ambiente Virtual
 # Graficado
 
 <div align="center">
-    <img src="https://media1.giphy.com/media/gjrOAylhpZm3dLnO5J/source.gif">
+    <img src="https://media1.giphy.com/media/gjrOAylhpZm3dLnO5J/source.gif" width="300" height="300" >
 </div> 
 
 ## ¿Por qué graficar?
@@ -1056,7 +1057,12 @@ El concepto de **optimización** permite resolver muchos problemas de manera com
 
 ## El problema del morral
 
-Imagina que eres un ladrón que entra a un museo pero tienes un gran problema, nada mas tienes una mochila pero hay muchísimas cosas mas de las que puedes cargar, por lo cual debes determinar cuales artículos puedes cargar y te entregaran el mayor valor posible.
+Este es un problema de optimización combinatoria, es decir, que busca la mejor solución entre un conjunto finito de posibles soluciones a un problema.
+
+Supongamos que tenemos <strong>n</strong> distintos tipos de ítems, que van del 1 a <strong>n</strong>. De cada tipo de ítem se tienen <strong>q<sub><i>i</i></sub></strong> items disponibles donde <strong>q<sub><i>i</i></sub></strong> es un entero positivo que cumple <strong>1 <= q<sub><i>i</i></sub> <= ∞</strong> .
+
+Cada tipo de ítem i tiene un beneficio asociado y un peso o volumen, por otro lado se tiene una mochila donde se pueden introducir los ítems, que soporta un peso máximo.
+El problema consiste en meter en el morral ítems de tal forma que se maximice el valor de los ítems que contiene y siempre que no se supere el peso o volumen máximo que puede soportar el mismo.
 
 Para este problema sabemos que no podemos dividir los artículos, por lo que nuestra primera aproximación sera evaluar los artículos.
 
@@ -1085,3 +1091,53 @@ if __name__ == '__main__':
 <div align="center">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Knapsack.svg/220px-Knapsack.svg.png">
 </div>
+
+---
+
+### Explicacion problema del morral:
+Para este algoritmo hemos elegido recorrer los elementos de la manera: n, n-1, n-2, ..., 0
+```py
+    def morral(tamano_morral, pesos, valores, n):
+
+    if n == 0 or tamano_morral == 0:
+        return 0
+```
+En esta parte creamos una funcion llamada <strong><i>morral()<i></strong> que, entre sus parámetros, tendrá la capacidad o tamaño del morral, el peso de cada elemento, los valores que aportan esos objetos y n que representa el objeto que iremos evaluando.
+
+El primer if que vemos nos esta diciendo que de no tener más objetos por examinar o si el tamaño del morral llego a su límite, ya no podremos retornar ningún valor nuevo.
+
+```py
+        if pesos[n - 1] > tamano_morral:
+        return morral(tamano_morral, pesos, valores, n - 1)
+```
+El segundo if nos esta diciendo que si el siguiente elemento <i>n</i> supera el tamaño del morral, retornará el valor anterior de la funcion ejecutada para <i>n-1</i>.
+
+Atención con esta parte, en la parte del if esta escrito como [n-1] ya que en la notacion de una lista nos estamos refiriendo al elemento que se esta examinando actualmente en la iteracion, y en el return nos referimos al valor n-1 , por lo que hablamos del elemento examinado en la iteración anterior. 
+
+``` py
+
+     return max(valores[n - 1] + morral(tamano_morral - pesos[n - 1], pesos, valores, n - 1),
+                morral(tamano_morral, pesos, valores, n - 1))
+
+```
+Esta parte es la que nos ayudará a saber si se eligió o no el elemento examinado.
+
+Para esta parte recordemos que el método max () devuelve el valor maximo de una secuencia de parametros.
+  
+  
+En este caso tenemos que nuetros parametros seran:
+```py
+(valores[n - 1] + morral(tamano_morral - pesos[n - 1], pesos, valores, n - 1)
+```
+
+Lo que significa:
+suma el valor del elemento actual de la lista más la funcion morral() evaluada para n-1, donde el tamaño del morral es el espacio restante hasta la iteracion anterior.
+
+o  
+```py
+ morral(tamano_morral, pesos, valores, n - 1)
+```
+Evalua unicamente la funcion morral() que tenias en la iteracion anterior 
+
+Aqui entra en juego la funcion max(), la cual determinará cual de esos parametros arroja el valor más alto.
+Si el elemento actual de la iteracion no aporta un mayor valor que el anterior, tomará el anterior y así se mantendrá hasta recorrer todos los elementos de la lista.
